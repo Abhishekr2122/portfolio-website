@@ -1,14 +1,41 @@
+import { motion } from "framer-motion";
+
+const variants = {
+  open: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+  closed: {
+    transition: {
+      staggerChildren: 0.08,
+      staggerDirection: -1,
+    },
+  },
+};
+
+const itemVariants = {
+  open: {
+    y: 0,
+    opacity: 1,
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+  },
+};
+
 export default function Links() {
   const items = ["Homepage", "Projects", "Contact"];
   return (
-    <div className="links">
+    <motion.div className="links" variants={variants}>
       {items.map(function (citem, i) {
         return (
-          <a href={`#${citem}`} key={citem}>
+          <motion.a href={`#${citem}`} key={citem} variants={itemVariants}>
             {citem}
-          </a>
+          </motion.a>
         );
       })}
-    </div>
+    </motion.div>
   );
 }
