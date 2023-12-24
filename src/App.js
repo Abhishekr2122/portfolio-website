@@ -1,6 +1,8 @@
+import "./app.scss";
+
 function App() {
   return (
-    <div className="App">
+    <div>
       <section>Hero</section>
       <section>Parallax</section>
       <section>Portfolio1</section>
