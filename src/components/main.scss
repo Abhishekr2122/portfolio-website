@@ -1,5 +1,6 @@
 .main {
   height: calc(100vh - 100px);
+  position: relative;
 
   .wrapper {
     max-width: 1366px;
@@ -12,6 +13,9 @@
       justify-content: center;
       height: 100%;
       gap: 40px;
+      width: 50%;
+      z-index: 1;
+      transition-duration: 1.8s;
 
       h2 {
         font-size: 50px;
@@ -31,8 +35,21 @@
           border-radius: 10px;
           background-color: transparent;
           font-size: medium;
+          cursor: pointer;
         }
       }
     }
+  }
+
+  .activeTextContainer {
+    translate: 50%;
+    transition-duration: 0.02s;
+  }
+
+  .imageContainer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 20%;
   }
 }

@@ -1,12 +1,12 @@
-import { useState } from "react";
 import Links from "./Links";
 import ToggleButton from "./ToggleButton";
 import "./sidebar.scss";
 import { motion } from "framer-motion";
+import { useSidebar } from "../contexts/SideBarProvider";
 
 export default function Sidebar() {
-  const [open, setOpen] = useState(false);
-  console.log(open);
+  // const [open, setOpen] = useState(false);
+  const { open, setOpen } = useSidebar();
 
   const variants = {
     open: {
