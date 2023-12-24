@@ -1,2 +1,38 @@
 .main {
+  height: calc(100vh - 100px);
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+
+    .textContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      gap: 40px;
+
+      h2 {
+        font-size: 50px;
+        letter-spacing: 8px;
+      }
+
+      h1 {
+        font-size: 80px;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 1rem;
+        button {
+          padding: 20px;
+          border: 1px solid whitesmoke;
+          border-radius: 10px;
+          background-color: transparent;
+          font-size: medium;
+        }
+      }
+    }
+  }
 }
