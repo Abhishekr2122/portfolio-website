@@ -31,7 +31,13 @@ export default function Links() {
     <motion.div className="links" variants={variants}>
       {items.map(function (citem, i) {
         return (
-          <motion.a href={`#${citem}`} key={citem} variants={itemVariants}>
+          <motion.a
+            href={`#${citem}`}
+            key={citem}
+            variants={itemVariants}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
             {citem}
           </motion.a>
         );
