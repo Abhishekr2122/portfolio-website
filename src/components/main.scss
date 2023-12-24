@@ -14,7 +14,6 @@
       height: 100%;
       gap: 40px;
       width: 50%;
-      z-index: 1;
       transition-duration: 1.8s;
 
       h2 {
@@ -43,13 +42,12 @@
 
   .activeTextContainer {
     translate: 50%;
-    transition-duration: 0.02s;
   }
 
-  .imageContainer {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 20%;
-  }
+  //   .imageContainer {
+  //     height: 100%;
+  //     position: absolute;
+  //     top: 0;
+  //     right: 20%;
+  //   }
 }

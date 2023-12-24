@@ -1,16 +1,15 @@
+import { useState } from "react";
 import "./app.scss";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
-import SideBarProvider from "./contexts/SideBarProvider";
 
 function App() {
+  const [open, setOpen] = useState(false);
   return (
     <div>
       <section id="Homepage">
-        <SideBarProvider>
-          <Navbar />
-          <Main />
-        </SideBarProvider>
+        <Navbar open={open} setOpen={setOpen} />
+        <Main open={open} setOpen={setOpen} />
       </section>
       <section id="Projects">Parallax</section>
       <section>Portfolio1</section>

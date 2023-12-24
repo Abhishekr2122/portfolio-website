@@ -1,10 +1,10 @@
 import Sidebar from "../ui/Sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
-export default function Navbar() {
+export default function Navbar({ open, setOpen }) {
   return (
     <div className="navbar">
-      <Sidebar />
+      <Sidebar open={open} setOpen={setOpen} />
       <div className="wrapper">
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}

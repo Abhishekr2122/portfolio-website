@@ -33,7 +33,7 @@ export default function Links() {
         return (
           <motion.a
             href={`#${citem}`}
-            key={citem}
+            key={i}
             variants={itemVariants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
