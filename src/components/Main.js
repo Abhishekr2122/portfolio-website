@@ -26,12 +26,34 @@ export default function Main({ open }) {
           <motion.h2 variants={textVariants}>Abhishek Shinde</motion.h2>
           <motion.h1 variants={textVariants}>Web developer</motion.h1>
           <motion.div className="buttons" variants={textVariants}>
-            <motion.button variants={textVariants}>
-              See the Latest works
-            </motion.button>
-            <motion.button variants={textVariants}>
-              Download my resume
-            </motion.button>
+            <a
+              href="https://github.com/Abhishekr2122"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: "black",
+                textDecoration: "none",
+                backgroundColor: "transparent",
+              }}
+            >
+              <motion.button variants={textVariants}>
+                See the Latest works
+              </motion.button>
+            </a>
+            <a
+              href="https://drive.google.com/drive/folders/1ELpIuV8Q0g54dKWA24jzhXlk7k8zpD4M"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: "black",
+                textDecoration: "none",
+                backgroundColor: "transparent",
+              }}
+            >
+              <motion.button variants={textVariants}>
+                Download resume
+              </motion.button>
+            </a>
           </motion.div>
         </motion.div>
       </div>

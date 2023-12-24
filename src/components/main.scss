@@ -28,6 +28,11 @@
       .buttons {
         display: flex;
         gap: 1rem;
+
+        :hover {
+          background-color: aliceblue;
+          transition-duration: 1.5s;
+        }
         button {
           padding: 20px;
           border: 1px solid whitesmoke;
@@ -35,6 +40,7 @@
           background-color: transparent;
           font-size: medium;
           cursor: pointer;
+          transition-duration: 1s;
         }
       }
     }
