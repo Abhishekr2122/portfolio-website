@@ -27,7 +27,7 @@ export default function Main({ open }) {
           <motion.h1 variants={textVariants}>Web developer</motion.h1>
           <motion.div className="buttons" variants={textVariants}>
             <a
-              href="https://github.com/Abhishekr2122"
+              href="https://github.com/Abhishekr2122?tab=repositories"
               target="_blank"
               rel="noreferrer"
               style={{
