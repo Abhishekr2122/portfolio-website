@@ -10,7 +10,7 @@ export default function Sidebar({ open, setOpen }) {
       transition: {
         type: "spring",
         stiffness: 20,
-        delay: 0.3,
+        delay: 0.5,
       },
     },
     closed: {
