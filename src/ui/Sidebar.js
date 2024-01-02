@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 export default function Sidebar({ open, setOpen }) {
   const variants = {
     open: {
-      clipPath: "circle(1200px at 50px 50px",
+      clipPath: "circle(1200px at 50px 50px)",
       transition: {
         type: "spring",
         stiffness: 20,
-        delay: 0.5,
+        delay: 0.1,
       },
     },
     closed: {
