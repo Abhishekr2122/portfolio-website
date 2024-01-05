@@ -1,4 +1,6 @@
+import { useRef } from "react";
 import "./projects.scss";
+import { motion, useScroll } from "framer-motion";
 
 const items = [
   {
@@ -15,8 +17,14 @@ const items = [
 ];
 
 export default function Projects() {
+  const ref = useRef();
+  const { scrollYProgress } = useScroll();
   return (
-    <div className="projects">
+    <div className="projects" ref={ref}>
+      <div className="progress">
+        <h1>Featured Projects</h1>
+        <div className="progressBar"></div>
+      </div>
       {items.map(function (citem, i) {
         return <section>{citem.title}</section>;
       })}
