@@ -18,7 +18,10 @@ const items = [
 
 export default function Projects() {
   const ref = useRef();
-  const { scrollYProgress } = useScroll();
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["end end", "start start"],
+  });
   return (
     <div className="projects" ref={ref}>
       <div className="progress">
