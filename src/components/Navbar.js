@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Navbar({ open, setOpen }) {
   return (
     <div className="navbar">
-      <Sidebar open={open} setOpen={setOpen} />
+      {/* <Sidebar open={open} setOpen={setOpen} /> */}
       <div className="wrapper">
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}
