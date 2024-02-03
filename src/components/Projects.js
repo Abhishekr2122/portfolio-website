@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./projects.scss";
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 const items = [
   {
@@ -22,11 +22,13 @@ export default function Projects() {
     target: ref,
     offset: ["end end", "start start"],
   });
+
+  const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
   return (
     <div className="projects" ref={ref}>
       <div className="progress">
         <h1>Featured Projects</h1>
-        <div className="progressBar"></div>
+        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map(function (citem, i) {
         return <section>{citem.title}</section>;
