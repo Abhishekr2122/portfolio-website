@@ -7,12 +7,19 @@ const items = [
     id: 1,
     title: "The Wild Oasis",
     desc: "Its an hotel management app ",
+    image: "/worldwise.png",
   },
-  { id: 2, title: "The Fast Pizza App ", desc: "Its an pizza oedering app" },
+  {
+    id: 2,
+    title: "The Fast Pizza App ",
+    desc: "Its an pizza oedering app",
+    image: "/projectsscreenshot2.png",
+  },
   {
     id: 3,
     title: "Forkify",
     desc: "Its an food item receipe app",
+    image: "/forkify.png",
   },
 ];
 
