@@ -23,6 +23,23 @@ const items = [
   },
 ];
 
+const Single = function ({ item }) {
+  const ref = useRef();
+
+  return (
+    <section ref={ref}>
+      <div className="container">
+        <img src={item.image} alt="no data found" />
+        <div className="textContainer">
+          <h2>{item.title}</h2>
+          <p>{item.desc}</p>
+          <button>Live project</button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default function Projects() {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
@@ -38,7 +55,7 @@ export default function Projects() {
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map(function (citem, i) {
-        return <section>{citem.title}</section>;
+        return <Single item={citem} />;
       })}
     </div>
   );
