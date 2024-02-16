@@ -34,7 +34,7 @@ const Single = function ({ item }) {
     <section ref={ref}>
       <div className="container">
         <div className="wrapper">
-          <div className="imageConatiner">
+          <div className="imageContainer">
             <img src={item.image} alt="no data found" />
           </div>
 
