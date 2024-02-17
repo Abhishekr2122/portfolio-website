@@ -17,7 +17,9 @@ function App() {
         <Parallax />
       </section>
       <Projects />
-      <section id="Contact">Contact</section>
+      <section id="Contact" style={{ color: "white" }}>
+        Contact
+      </section>
     </div>
   );
 }
