@@ -10,7 +10,7 @@ export default function Contact() {
           <span>abhishekrshinde21@gmail.com</span>
         </div>
         <div className="item">
-          <h2>Linkdln</h2>
+          <h2>Linkedin</h2>
           <span>
             <a
               href="https://www.linkedin.com/in/abhishek-shinde1/"

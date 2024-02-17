@@ -1,5 +1,8 @@
 .navbar {
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   .wrapper {
     max-width: 1366px;
@@ -14,16 +17,12 @@
       margin-left: 20px;
       color: white;
     }
+  }
 
-    .socials {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-
-      img {
-        height: 20px;
-        width: 20px;
-      }
-    }
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
   }
 }

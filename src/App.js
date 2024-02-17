@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <section id="Homepage">
-        <Navbar open={open} setOpen={setOpen} />
+        <Navbar />
         <Main open={open} setOpen={setOpen} />
       </section>
       <section id="Projects">
