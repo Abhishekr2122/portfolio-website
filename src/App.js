@@ -4,6 +4,7 @@ import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Parallax from "./components/Parallax";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -17,8 +18,8 @@ function App() {
         <Parallax />
       </section>
       <Projects />
-      <section id="Contact" style={{ color: "white" }}>
-        Contact
+      <section id="Contact">
+        <Contact />
       </section>
     </div>
   );
