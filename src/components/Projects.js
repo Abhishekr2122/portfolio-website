@@ -5,21 +5,24 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "The Fast Pizza App ",
-    desc: "Its an pizza oedering app",
-    image: "/projectscreenshot2.png",
+    title: "The Wild Oasis",
+    desc: "Its an hotel management app dadadaaj ajdajdajdajdajkdjada dbakbakdbakdbakdbakdbakdbakbkc C C bCB BC JC zJC bCb",
+    image: "/worldwise.png",
+    href: "https://the-wild-oasis-react-app.netlify.app/",
   },
   {
     id: 2,
-    title: "The Wild Oasis",
-    desc: "Its an hotel management app ",
-    image: "/worldwise.png",
+    title: "The Fast Pizza App ",
+    desc: "Its an pizza ordering app dadjajsfjsafsajfsajfjsfja lorem10adadadadadadadadadadad",
+    image: "/projectscreenshot2.png",
+    href: "https://fast-pizza-react-app.netlify.app/",
   },
   {
     id: 3,
     title: "Forkify",
-    desc: "Its an food item receipe app",
+    desc: "Its an food item receipe app dabajdbadbajdbadb jadajbdjabdjabdkadbkdbakdb adbakdbakdbakdbakdbakdadabdahbbcajJAcjaa",
     image: "/forkify.png",
+    href: "https://forkify-234dvc.netlify.app/",
   },
 ];
 
@@ -31,7 +34,7 @@ const Single = function ({ item }) {
     // offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-120, 120]);
+  const y = useTransform(scrollYProgress, [0, 1], [-115, 115]);
 
   return (
     <section>
@@ -44,7 +47,9 @@ const Single = function ({ item }) {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>Live project</button>
+            <a href={item.href} target="_blank" rel="noreferrer">
+              <button>Live project</button>
+            </a>
           </motion.div>
         </div>
       </div>
