@@ -41,7 +41,7 @@ const Single = function ({ item }) {
           <motion.div className="textContainer">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button style={{ cursor: "pointer" }}>Live project</button>
+            <button>Live project</button>
           </motion.div>
         </div>
       </div>
