@@ -22,7 +22,32 @@
   .socials {
     display: flex;
     align-items: center;
-    gap: 50px;
-    padding: 20px;
+    gap: 70px;
+    padding: 50px;
+  }
+
+  .links {
+    transition-duration: 1s;
+
+    text-decoration: none;
+    color: blueviolet;
+    &:hover {
+      color: white;
+      transition-duration: 1s;
+    }
+  }
+
+  .icons {
+    // style={{ height: "25px", width: "25px", color: "white" }}
+
+    height: 25px;
+    width: 25px;
+    color: white;
+    transition-duration: 1s;
+
+    &:hover {
+      color: blueviolet;
+      transition-duration: 1s;
+    }
   }
 }

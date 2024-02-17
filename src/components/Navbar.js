@@ -20,17 +20,14 @@ export default function Navbar() {
             display: "flex",
             alignItems: "center",
             gap: "100px",
-            padding: "20px",
+            padding: "50px",
             fontSize: "20px",
           }}
         >
           {navItems.map(function (citem, i) {
             return (
               <li key={i}>
-                <a
-                  href={citem.id}
-                  style={{ textDecoration: "none", color: "blueviolet" }}
-                >
+                <a href={citem.id} className="links">
                   {citem.text}
                 </a>
               </li>
@@ -45,9 +42,7 @@ export default function Navbar() {
             target="_blank"
             rel="noreferrer"
           >
-            <CiLinkedin
-              style={{ height: "25px", width: "25px", color: "white" }}
-            />
+            <CiLinkedin className="icons" />
           </a>
         </div>
         <div>
@@ -56,9 +51,7 @@ export default function Navbar() {
             target="_blank"
             rel=" noreferrer"
           >
-            <IoLogoGithub
-              style={{ height: "25px", width: "25px", color: "white" }}
-            />
+            <IoLogoGithub className="icons" />
           </a>
         </div>
         <div>
@@ -67,9 +60,7 @@ export default function Navbar() {
             target="_blank"
             rel="noreferrer"
           >
-            <LiaGoogleDrive
-              style={{ height: "25px", width: "25px", color: "white" }}
-            />
+            <LiaGoogleDrive className="icons" />
           </a>
         </div>
         <div>
@@ -78,9 +69,7 @@ export default function Navbar() {
             target="_blank"
             rel="noreferrer"
           >
-            <VscRepo
-              style={{ height: "25px", width: "25px", color: "white" }}
-            />
+            <VscRepo className="icons" />
           </a>
         </div>
       </div>
