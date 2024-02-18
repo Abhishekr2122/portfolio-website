@@ -1,7 +1,15 @@
 import "./main.scss";
 import { motion } from "framer-motion";
-import { FaHtml5 } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io5";
+import { GrHtml5 } from "react-icons/gr";
+import { TbBrandCss3 } from "react-icons/tb";
+import { TbBrandJavascript } from "react-icons/tb";
+import { FaReact } from "react-icons/fa";
+import { RiBootstrapLine } from "react-icons/ri";
+import { TbBrandTailwind } from "react-icons/tb";
+import { FaSass } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { TbBrandSupabase } from "react-icons/tb";
+
 const textVariants = {
   initial: { y: 500, opacity: 0 },
   animate: {
@@ -64,13 +72,59 @@ export default function Main({ open }) {
             height: "50%",
             width: "50%",
             display: "flex",
-            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "20%",
           }}
         >
-          <h1 style={{ fontSize: "60px", padding: "20px", color: "white" }}>
+          <h1
+            style={{
+              fontSize: "65px",
+              color: "white",
+              borderBottom: "1px dashed white",
+              width: "100%",
+              textAlign: "center",
+              fontWeight: "lighter",
+            }}
+          >
             Tech Stack
           </h1>
-          <div></div>
+          <div
+            style={{
+              color: "white",
+
+              display: "flex",
+              gap: "20px",
+            }}
+          >
+            <FaJava
+              style={{ height: "50px", width: "50px", cursor: "pointer" }}
+            />
+            <GrHtml5
+              style={{ height: "50px", width: "50px", cursor: "pointer" }}
+            />
+            <TbBrandCss3
+              style={{ height: "50px", width: "50px", cursor: "pointer" }}
+            />
+            <TbBrandJavascript
+              style={{ height: "50px", width: "50px", cursor: "pointer" }}
+            />
+            <RiBootstrapLine
+              style={{ height: "50px", width: "50px", cursor: "pointer" }}
+            />
+            <FaSass
+              style={{ height: "50px", width: "50px", cursor: "pointer" }}
+            />
+            <TbBrandTailwind
+              style={{ height: "50px", width: "50px", cursor: "pointer" }}
+            />
+            <FaReact
+              style={{ height: "50px", width: "50px", cursor: "pointer" }}
+            />
+            <TbBrandSupabase
+              style={{ height: "50px", width: "50px", cursor: "pointer" }}
+            />
+          </div>
         </div>
       </div>
 
