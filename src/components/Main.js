@@ -78,19 +78,19 @@ export default function Main({ open }) {
         >
           <div className="mainIconContainer">
             <div className="subIconContainer">
-              <GrHtml5 className="icon" />
-              <TbBrandCss3 className="icon" />
-              <TbBrandJavascript className="icon" />
-              <FaReact className="icon" />
+              <GrHtml5 className="icon" id="html" />
+              <TbBrandCss3 className="icon" id="css" />
+              <TbBrandJavascript className="icon" id="javascript" />
+              <FaReact className="icon" id="react" />
             </div>
             <div className="subIconContainer">
-              <RiBootstrapLine className="icon" />
-              <FaSass className="icon" />
-              <TbBrandTailwind className="icon" />
+              <RiBootstrapLine className="icon" id="bootstrap" />
+              <FaSass className="icon" id="sass" />
+              <TbBrandTailwind className="icon" id="tailwind" />
             </div>
             <div className="subIconContainer">
-              <TbBrandSupabase className="icon" />
-              <FaJava className="icon" />
+              <TbBrandSupabase className="icon" id="supabase" />
+              <FaJava className="icon" id="java" />
             </div>
           </div>
         </div>

@@ -75,10 +75,84 @@
     height: 50px;
     width: 50px;
     cursor: pointer;
-    transition-duration: 1.5s;
+  }
 
+  #html {
+    transition-duration: 1.5s;
+    color: rgb(40, 112, 229);
     &:hover {
-      color: blueviolet;
+      transform: scale(1.5);
+      transition-duration: 1.5s;
+    }
+  }
+
+  #css {
+    transition-duration: 1.5s;
+    color: orangered;
+    &:hover {
+      transform: scale(1.5);
+      transition-duration: 1.5s;
+    }
+  }
+
+  #javascript {
+    transition-duration: 1.5s;
+    color: yellow;
+    &:hover {
+      transform: scale(1.5);
+      transition-duration: 1.5s;
+    }
+  }
+
+  #react {
+    transition-duration: 1.5s;
+    color: skyblue;
+    &:hover {
+      transform: scale(1.5);
+      transition-duration: 1.5s;
+    }
+  }
+
+  #bootstrap {
+    transition-duration: 1.5s;
+    color: blueviolet;
+    &:hover {
+      transform: scale(1.5);
+      transition-duration: 1.5s;
+    }
+  }
+
+  #sass {
+    transition-duration: 1.5s;
+    color: pink;
+    &:hover {
+      transform: scale(1.5);
+      transition-duration: 1.5s;
+    }
+  }
+
+  #tailwind {
+    transition-duration: 1.5s;
+    color: rgb(92, 215, 253);
+    &:hover {
+      transform: scale(1.5);
+      transition-duration: 1.5s;
+    }
+  }
+
+  #supabase {
+    transition-duration: 1.5s;
+    color: lightgreen;
+    &:hover {
+      transform: scale(1.5);
+      transition-duration: 1.5s;
+    }
+  }
+
+  #java {
+    transition-duration: 1.5s;
+    color: rgb(0, 51, 255);
+    &:hover {
       transform: scale(1.5);
       transition-duration: 1.5s;
     }

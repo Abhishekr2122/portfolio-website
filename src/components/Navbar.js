@@ -21,7 +21,7 @@ export default function Navbar() {
             alignItems: "center",
             gap: "100px",
             padding: "50px",
-            fontSize: "20px",
+            fontSize: "25px",
           }}
         >
           {navItems.map(function (citem, i) {
