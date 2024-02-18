@@ -19,7 +19,7 @@ const items = [
   },
   {
     id: 3,
-    title: "Forkify",
+    title: "The Forkify",
     desc: "Its an food item receipe app dabajdbadbajdbadb jadajbdjabdjabdkadbkdbakdb adbakdbakdbakdbakdbakdadabdahbbcajJAcjaa",
     image: "/forkify.png",
     href: "https://forkify-234dvc.netlify.app/",

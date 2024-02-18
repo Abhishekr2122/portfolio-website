@@ -1,6 +1,7 @@
 import "./main.scss";
 import { motion } from "framer-motion";
-
+import { FaHtml5 } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io5";
 const textVariants = {
   initial: { y: 500, opacity: 0 },
   animate: {
@@ -56,7 +57,23 @@ export default function Main({ open }) {
             </a>
           </motion.div>
         </motion.div>
+        <div
+          style={{
+            border: "1px dashed white",
+            borderRadius: "4px",
+            height: "50%",
+            width: "50%",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <h1 style={{ fontSize: "60px", padding: "20px", color: "white" }}>
+            Tech Stack
+          </h1>
+          <div></div>
+        </div>
       </div>
+
       {/* <div className="imageContainer">
         <img src="/newprofile.png" alt="processing" />
       </div> */}
