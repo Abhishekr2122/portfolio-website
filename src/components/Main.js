@@ -67,63 +67,31 @@ export default function Main({ open }) {
         </motion.div>
         <div
           style={{
-            border: "1px dashed white",
-            borderRadius: "4px",
             height: "50%",
             width: "50%",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "20%",
+            // display: "flex",
+            // flexDirection: "column",
+            // alignItems: "center",
+
+            // gap: "20%",
           }}
         >
-          <h1
-            style={{
-              fontSize: "65px",
-              color: "white",
-              borderBottom: "1px dashed white",
-              width: "100%",
-              textAlign: "center",
-              fontWeight: "lighter",
-            }}
-          >
-            Tech Stack
-          </h1>
-          <div
-            style={{
-              color: "white",
-
-              display: "flex",
-              gap: "20px",
-            }}
-          >
-            <FaJava
-              style={{ height: "50px", width: "50px", cursor: "pointer" }}
-            />
-            <GrHtml5
-              style={{ height: "50px", width: "50px", cursor: "pointer" }}
-            />
-            <TbBrandCss3
-              style={{ height: "50px", width: "50px", cursor: "pointer" }}
-            />
-            <TbBrandJavascript
-              style={{ height: "50px", width: "50px", cursor: "pointer" }}
-            />
-            <RiBootstrapLine
-              style={{ height: "50px", width: "50px", cursor: "pointer" }}
-            />
-            <FaSass
-              style={{ height: "50px", width: "50px", cursor: "pointer" }}
-            />
-            <TbBrandTailwind
-              style={{ height: "50px", width: "50px", cursor: "pointer" }}
-            />
-            <FaReact
-              style={{ height: "50px", width: "50px", cursor: "pointer" }}
-            />
-            <TbBrandSupabase
-              style={{ height: "50px", width: "50px", cursor: "pointer" }}
-            />
+          <div className="mainIconContainer">
+            <div className="subIconContainer">
+              <GrHtml5 className="icon" />
+              <TbBrandCss3 className="icon" />
+              <TbBrandJavascript className="icon" />
+              <FaReact className="icon" />
+            </div>
+            <div className="subIconContainer">
+              <RiBootstrapLine className="icon" />
+              <FaSass className="icon" />
+              <TbBrandTailwind className="icon" />
+            </div>
+            <div className="subIconContainer">
+              <TbBrandSupabase className="icon" />
+              <FaJava className="icon" />
+            </div>
           </div>
         </div>
       </div>

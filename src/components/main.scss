@@ -57,10 +57,30 @@
     translate: 50%;
   }
 
-  //   .imageContainer {
-  //     height: 100%;
-  //     position: absolute;
-  //     top: 0;
-  //     right: 20%;
-  //   }
+  .mainIconContainer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .subIconContainer {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition-duration: 1.5s;
+
+    &:hover {
+      color: blueviolet;
+      transform: scale(1.5);
+      transition-duration: 1.5s;
+    }
+  }
 }
