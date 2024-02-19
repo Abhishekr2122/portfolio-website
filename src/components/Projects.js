@@ -6,7 +6,7 @@ const items = [
   {
     id: 1,
     title: "The Wild Oasis",
-    desc: `It's an app for hotel management.where the administrator may sign in and exit. Additionally, we have the ability to change the cabins, add new ones, and remove existing ones. The administrator can also oversee visitor check-in and check-out procedures..
+    desc: `It's an app for hotel management.where the administrator may sign in and exit. Additionally, we have the ability to change the cabins, add new ones, and remove existing ones. The administrator can also oversee visitor check-in and check-out procedures.
     `,
     image: "/worldwise.png",
     href: "https://the-wild-oasis-react-app.netlify.app/",
@@ -24,7 +24,8 @@ const items = [
   {
     id: 3,
     title: "The Forkify",
-    desc: "Its an food item receipe app dabajdbadbajdbadb jadajbdjabdjabdkadbkdbakdb adbakdbakdbakdbakdbakdadabdahbbcajJAcjaa",
+    desc: `An app for recipes is called Forkify. where we may look up and obtain recipes for a wide range of foods. Users have the ability to add their own food recipes and bookmark their favorite recipes in this app. Additionally, the recipe can be modified by the user based on how many people will be fed.
+    `,
     image: "/forkify.png",
     href: "https://forkify-234dvc.netlify.app/",
   },
