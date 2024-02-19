@@ -20,6 +20,7 @@ export default function Parallax() {
             return (
               <span
                 style={{ color: `${i % 2 !== 0 ? "blueviolet" : "white"}` }}
+                key={i}
               >
                 {citem}
               </span>

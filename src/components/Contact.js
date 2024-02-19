@@ -1,9 +1,11 @@
 import { useState } from "react";
 import "./contact.scss";
+import toast from "react-hot-toast";
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   return (
     <div className="contact">
       <div className="textContainer">
@@ -67,13 +69,22 @@ export default function Contact() {
             }}
             value={email}
           />
-          <textarea rows={8} placeholder="Message" />
+          <textarea
+            rows={8}
+            placeholder="Message"
+            value={message}
+            onChange={function (e) {
+              setMessage(e.target.value);
+            }}
+          />
           <button
             onClick={function () {
               console.log(name, email);
-              if (name.length > 0 && email.length > 0) {
+              if (name.length > 0 && email.length > 0 && message.length > 0) {
                 setName("");
                 setEmail("");
+                setMessage("");
+                toast.success("Form successfully submitted");
               }
             }}
           >
