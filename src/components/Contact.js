@@ -1,6 +1,9 @@
+import { useState } from "react";
 import "./contact.scss";
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   return (
     <div className="contact">
       <div className="textContainer">
@@ -46,10 +49,36 @@ export default function Contact() {
             e.preventDefault();
           }}
         >
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
+          <input
+            type="text"
+            placeholder="Name"
+            required
+            value={name}
+            onChange={function (e) {
+              setName(e.target.value);
+            }}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            required
+            onChange={function (e) {
+              setEmail(e.target.value);
+            }}
+            value={email}
+          />
           <textarea rows={8} placeholder="Message" />
-          <button>Submit</button>
+          <button
+            onClick={function () {
+              console.log(name, email);
+              if (name.length > 0 && email.length > 0) {
+                setName("");
+                setEmail("");
+              }
+            }}
+          >
+            Submit
+          </button>
         </form>
       </div>
     </div>

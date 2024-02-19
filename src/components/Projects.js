@@ -77,7 +77,7 @@ export default function Projects() {
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map(function (citem, i) {
-        return <Single item={citem} />;
+        return <Single item={citem} key={i} />;
       })}
     </div>
   );
