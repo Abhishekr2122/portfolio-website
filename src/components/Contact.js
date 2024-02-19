@@ -41,7 +41,11 @@ export default function Contact() {
         </div>
       </div>
       <div className="formContainer">
-        <form>
+        <form
+          onSubmit={function (e) {
+            e.preventDefault();
+          }}
+        >
           <input type="text" placeholder="Name" required />
           <input type="email" placeholder="Email" required />
           <textarea rows={8} placeholder="Message" />

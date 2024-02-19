@@ -26,7 +26,7 @@ export default function Parallax() {
             );
           })}
         </h1>
-        <button
+        {/* <button
           style={{
             width: "50%",
             padding: "10px",
@@ -34,6 +34,7 @@ export default function Parallax() {
             color: "white",
             borderRadius: "4px",
             border: "1px dashed white",
+            cursor: "pointer",
           }}
         >
           <a
@@ -44,7 +45,7 @@ export default function Parallax() {
           >
             Click here
           </a>
-        </button>
+        </button> */}
       </div>
 
       <div className="mountains"></div>

@@ -6,14 +6,18 @@ const items = [
   {
     id: 1,
     title: "The Wild Oasis",
-    desc: "Its an hotel management app dadadaaj ajdajdajdajdajkdjada dbakbakdbakdbakdbakdbakdbakbkc C C bCB BC JC zJC bCb",
+    desc: `It's an app for hotel management.where the administrator may sign in and exit. Additionally, we have the ability to change the cabins, add new ones, and remove existing ones. The administrator can also oversee visitor check-in and check-out procedures..
+    `,
     image: "/worldwise.png",
     href: "https://the-wild-oasis-react-app.netlify.app/",
   },
   {
     id: 2,
     title: "The Fast Pizza App ",
-    desc: "Its an pizza ordering app dadjajsfjsafsajfsajfjsfja lorem10adadadadadadadadadadad",
+    desc: `A pizza ordering app consisting of the menu with various types of pizza.Here the user can add various type of pizzas.And the user can 
+    also increase or decrease the quantity of a particular pizza. And also delete the pizza item which the user doesnt want. Its consists of the 
+    order summary displaying the total items to be ordered and the total price of the order. 
+    `,
     image: "/projectscreenshot2.png",
     href: "https://fast-pizza-react-app.netlify.app/",
   },

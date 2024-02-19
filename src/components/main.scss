@@ -61,12 +61,12 @@
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 65px;
   }
 
   .subIconContainer {
     display: flex;
-    gap: 70px;
+    gap: 100px;
     align-items: center;
     justify-content: center;
   }
@@ -79,7 +79,7 @@
 
   #html {
     transition-duration: 1.5s;
-    color: rgb(40, 112, 229);
+    color: orangered;
     &:hover {
       transform: scale(1.5);
       transition-duration: 1.5s;
@@ -88,7 +88,7 @@
 
   #css {
     transition-duration: 1.5s;
-    color: orangered;
+    color: rgb(40, 112, 229);
     &:hover {
       transform: scale(1.5);
       transition-duration: 1.5s;
