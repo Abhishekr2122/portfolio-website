@@ -19,9 +19,9 @@ function App() {
         <Parallax />
       </section>
       <Projects />
-      {/* <section id="Contact">
+      <section id="Contact">
         <Contact />
-      </section> */}
+      </section>
       <Toaster
         position="top-center"
         gutter={8}
