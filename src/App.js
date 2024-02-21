@@ -13,15 +13,15 @@ function App() {
     <div>
       <section id="Homepage">
         <Navbar />
-        <Main open={open} setOpen={setOpen} />
+        {/* <Main open={open} setOpen={setOpen} /> */}
       </section>
-      <section id="Projects">
+      {/* <section id="Projects">
         <Parallax />
-      </section>
-      <Projects />
-      <section id="Contact">
+      </section> */}
+      {/* <Projects /> */}
+      {/* <section id="Contact">
         <Contact />
-      </section>
+      </section> */}
       <Toaster
         position="top-center"
         gutter={8}

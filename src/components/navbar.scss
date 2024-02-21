@@ -1,21 +1,37 @@
+@import "../app.scss";
+
 .navbar {
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  .wrapper {
-    max-width: 1366px;
-    margin: auto;
+  // .wrapper {
+  //   max-width: 1366px;
+  //   margin: auto;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   height: 100%;
+
+  //   span {
+  //     font-weight: bold;
+  //     margin-left: 20px;
+  //     color: white;
+  //   }
+  // }
+
+  .navList {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 100%;
+    gap: 100px;
+    padding: 50px;
+    font-size: 25px;
 
-    span {
-      font-weight: bold;
-      margin-left: 20px;
-      color: white;
+    @include mobile {
+      gap: 15px;
+      padding: 5px;
+      font-size: 13px;
     }
   }
 
@@ -24,6 +40,11 @@
     align-items: center;
     gap: 70px;
     padding: 50px;
+
+    @include mobile {
+      gap: 10px;
+      padding: 5px;
+    }
   }
 
   .links {
@@ -42,6 +63,10 @@
 
     height: 30px;
     width: 30px;
+    @include mobile {
+      height: 18px;
+      width: 18px;
+    }
     color: white;
     transition-duration: 1s;
 

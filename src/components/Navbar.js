@@ -15,15 +15,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="navItems">
-        <ul
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "100px",
-            padding: "50px",
-            fontSize: "25px",
-          }}
-        >
+        <ul className="navList">
           {navItems.map(function (citem, i) {
             return (
               <li key={i}>
