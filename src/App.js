@@ -13,7 +13,7 @@ function App() {
     <div>
       <section id="Homepage">
         <Navbar />
-        {/* <Main open={open} setOpen={setOpen} /> */}
+        <Main open={open} setOpen={setOpen} />
       </section>
       {/* <section id="Projects">
         <Parallax />
