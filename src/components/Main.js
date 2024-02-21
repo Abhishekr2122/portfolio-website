@@ -65,17 +65,7 @@ export default function Main({ open }) {
             </a>
           </motion.div>
         </motion.div>
-        <div
-          style={{
-            height: "50%",
-            width: "50%",
-            // display: "flex",
-            // flexDirection: "column",
-            // alignItems: "center",
-
-            // gap: "20%",
-          }}
-        >
+        <div className="iconContainer">
           <div className="mainIconContainer">
             <div className="subIconContainer">
               <GrHtml5 className="icon" id="html" />
