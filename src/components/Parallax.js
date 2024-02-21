@@ -11,11 +11,7 @@ export default function Parallax() {
           gap: "20px",
         }}
       >
-        <h1
-          style={{
-            fontSize: "90px",
-          }}
-        >
+        <h1>
           {[..."Projects"].map(function (citem, i) {
             return (
               <span

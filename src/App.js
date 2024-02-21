@@ -15,9 +15,9 @@ function App() {
         <Navbar />
         <Main open={open} setOpen={setOpen} />
       </section>
-      {/* <section id="Projects">
+      <section id="Projects">
         <Parallax />
-      </section> */}
+      </section>
       {/* <Projects /> */}
       {/* <section id="Contact">
         <Contact />
